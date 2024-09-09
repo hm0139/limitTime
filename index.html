@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <script src="limit.js"></script>
+    <title>残り時間</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="heder-title">残り時間</h1>
+        <div class="container">
+          <canvas id="main"></canvas>
+          <div class="time-info">
+            <p>開始時間 <input type="time" id="start-time" value="00:00:00" step="1" /></p>
+            <p>終了時間 <input type="time" id="end-time" value="00:00:00" step="1" /></p>
+            <p><input type="button" id="set-time" value="設定" /></p>
+            <div id="set-time-info">
+              <div id="start-time-info">-</div>
+              <div>↓</div>
+              <div id="end-time-info">-</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
